@@ -173,8 +173,6 @@ internal class ActivityCm : AppCompatActivity() {
 
         override fun onSessionSetUpFailure(ex: Throwable?) {
             if (isAdded()) {
-//                ex?.let { LoggerUtils.debugStackTrace(it) }
-
                 onSessionSetUpCancel()
                 showShortToast(this@ActivityCm,R.string.session_set_up_failure_message)
             }
@@ -441,7 +439,7 @@ internal class ActivityCm : AppCompatActivity() {
     private fun getCmChatSessionRequestCallback() = object : CmChatSessionRequestCallback(){
 
         override fun onChatSessionRequest(cmChatSessionRequestHandler: CmChatSessionRequestHandler) {
-            if (!isAdded()) {
+            if (isAdded()) {
                 debugLog("Chat session request")
                 mCmChatSessionRequestHandler = cmChatSessionRequestHandler
                 mNewChatRequestDialog.show()
@@ -450,7 +448,7 @@ internal class ActivityCm : AppCompatActivity() {
         }
 
         override fun onChatRequestDrop(ex: Throwable?) {
-            if (!isAdded()) {
+            if (isAdded()) {
                 disableChatRequestDialog()
                 showShortToast(this@ActivityCm, getString(R.string.cm_session_start_failure_message))
                 hideWaitScreen()
@@ -458,7 +456,7 @@ internal class ActivityCm : AppCompatActivity() {
         }
 
         override fun onChatSessionSetUpSuccess() {
-            if (!isAdded()) {
+            if (isAdded()) {
                 disableChatRequestDialog()
                 showShortToast(this@ActivityCm, getString(R.string.cm_session_start_message))
                 hideWaitScreen()
