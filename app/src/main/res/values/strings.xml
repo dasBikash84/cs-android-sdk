@@ -34,6 +34,11 @@
     <string name="cm_welcome_message">Hello, Sir. How may i help you?</string>
     <string name="cm_session_start_failure_message">Cm Session start failure.</string>
     <string name="cm_session_start_message">Cm Session started.</string>
+    <string name="chat_session_id">Chat session id</string>
+    <string name="chat_date_text">Chat Time</string>
+    <string name="no_message_found">No message found!!</string>
+    <string name="chat_history_menu_item">Chat history</string>
+    <string name="launch_chat_history_prompt">Load chat history view?</string>
 
     <string-array name="user_type">
         <item>Customer Manager</item>

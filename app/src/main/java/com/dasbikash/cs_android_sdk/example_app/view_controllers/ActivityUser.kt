@@ -1,6 +1,8 @@
 package com.dasbikash.cs_android_sdk.example_app.view_controllers
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
@@ -312,5 +314,31 @@ internal class ActivityUser : AppCompatActivity() {
         findViewComponents()
         setListenersForViewComponents()
         initView()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.chat_activity_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.menu_item_chat_history -> {
+                launchChatHistoryView()
+                return true
+            }
+            else -> {
+                return false
+            }
+        }
+    }
+
+    private fun launchChatHistoryView() {
+        DialogUtils.showAlertDialog(this, DialogUtils.AlertDialogDetails(
+            message = getString(R.string.launch_chat_history_prompt),
+            doOnPositivePress = {
+                startActivity(ActivityChatHistory.getIntent(this))
+            }
+        ))
     }
 }

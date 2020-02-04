@@ -6,6 +6,8 @@ import android.content.Intent
 import android.os.Build
 import android.view.View
 import androidx.fragment.app.Fragment
+import kotlinx.coroutines.*
+import kotlin.coroutines.CoroutineContext
 
 internal fun <T: Activity> Activity.jumpToSelectedActivity(type:Class<T>){
     val intent = Intent(this, type)
@@ -49,5 +51,17 @@ internal fun Activity.isAdded():Boolean{
         return !isDestroyed
     }else {
         return true
+    }
+}
+
+internal fun runOnMainThread(task: () -> Any?){
+    GlobalScope.launch(Dispatchers.Main) {
+        task()
+    }
+}
+
+internal suspend fun <T:Any> CoroutineContext.runAsync(task:()->T):T {
+    return withContext(this) {
+        return@withContext async(Dispatchers.IO) { task() }.await()
     }
 }
