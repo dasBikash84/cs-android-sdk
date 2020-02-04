@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Cs SDK</string>
+    <string name="user_type_selector_prompt">User type:</string>
+    <string name="select_user_button_text">Enter</string>
+    <string name="start_chat_session_text">Start Chat</string>
+    <string name="quit_chat_session_text">End chat</string>
+    <string name="submit_chat_entry_text">Submit</string>
+    <string name="chat_set_up_message">Please wait while we connect you to one of our customer mangers…</string>
+    <string name="chat_session_end_prompt">Quit chat?</string>
+    <string name="error_message">Error occurred!! Please retry.</string>
+    <string name="chat_session_start_prompt">Start chat session?</string>
+    <string name="chat_session_terminated_message">Chat session terminated!!</string>
+    <string name="chat_entry_post_failure_message">Chat entry posting failed</string>
+    <string name="cm_name_text">Customer Manager: %1$s</string>
+
+    <string-array name="user_type">
+        <item>Customer Manager</item>
+        <item>Customer</item>
+    </string-array>
+    <string name="default_cm_id">test_cm1@client2.com</string>
+    <string name="default_cm_pass">1234</string>
+    <string name="default_user_id">test_cus1@client2.com</string>
+    <string name="default_user_pass">1234</string>
 </resources>

@@ -26,9 +26,7 @@ internal object ChatServerBaseApi {
     const val ORDER_DELETED_STATUS_CODE = 410
     const val FORBIDDEN_STATUS_CODE = 403
 
-//    private const val BASE_API_PATH = "http://192.168.0.105:8055/"
-    private const val BASE_API_PATH = "http://192.168.0.104:8055/"
-//    private const val BASE_API_PATH = "http://192.168.0.116:8055/"
+    private const val BASE_API_PATH = "http://192.168.0.111:9110/admin/"
     private const val JWT_PREAMBLE = "Bearer "
     private const val BASE_API_PATH_SPK =
         "com.dasbikash.cs_android_sdk.android_sdk.data_service.api.ChatServerBaseApi.BASE_API_PATH_SPK"

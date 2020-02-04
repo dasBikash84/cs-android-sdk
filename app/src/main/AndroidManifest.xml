@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".example_app.view_controllers.ActivityUser"></activity>
+        <activity android:name=".example_app.view_controllers.UserSelectionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
