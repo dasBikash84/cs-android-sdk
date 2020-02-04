@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1089547602721",
+    "firebase_url": "https://chat-service-375e0.firebaseio.com",
+    "project_id": "chat-service-375e0",
+    "storage_bucket": "chat-service-375e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089547602721:android:395355cddcc0c34e660c60",
+        "android_client_info": {
+          "package_name": "com.dasbikash.android_sdk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089547602721-42eidvf5iho4uu07sa56709giu2np8rt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEdEcjZGugwtrxMxDzH1GXbt4i4b29AbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089547602721-42eidvf5iho4uu07sa56709giu2np8rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089547602721:android:d6f57886711ba6d9660c60",
+        "android_client_info": {
+          "package_name": "com.dasbikash.cs_android_sdk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089547602721-42eidvf5iho4uu07sa56709giu2np8rt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEdEcjZGugwtrxMxDzH1GXbt4i4b29AbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089547602721-42eidvf5iho4uu07sa56709giu2np8rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
