@@ -10,8 +10,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.dasbikash.cs_android_sdk.R
 import com.dasbikash.cs_android_sdk.android_sdk.model.public_models.ChatEntry
-import com.dasbikash.cs_android_sdk.example_app.view_controllers.hide
-import com.dasbikash.cs_android_sdk.example_app.view_controllers.show
 
 
 internal object ChatEntryDiff: DiffUtil.ItemCallback<ChatEntry>(){

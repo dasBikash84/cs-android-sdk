@@ -120,12 +120,14 @@
         <LinearLayout
             android:id="@+id/wait_window"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:alpha="0.8"
             android:background="@android:color/white"
             android:gravity="center"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <ProgressBar
                 android:id="@+id/chat_set_up_wait_window_progress_bar"

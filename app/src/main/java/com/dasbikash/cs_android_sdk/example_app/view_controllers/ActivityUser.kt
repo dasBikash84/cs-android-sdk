@@ -21,6 +21,9 @@ import com.dasbikash.cs_android_sdk.android_sdk.utils.debugLog
 import com.dasbikash.cs_android_sdk.android_sdk.utils.debugStackTrace
 import com.dasbikash.cs_android_sdk.example_app.client_api_service.AuthDataService
 import com.dasbikash.cs_android_sdk.example_app.utils.ChatEntryListAdapter
+import com.dasbikash.cs_android_sdk.example_app.utils.hide
+import com.dasbikash.cs_android_sdk.example_app.utils.isAdded
+import com.dasbikash.cs_android_sdk.example_app.utils.show
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -78,8 +81,8 @@ internal class ActivityUser : AppCompatActivity() {
     }
 
     private fun showWaitScreen(){
-        mWaitScreen.show()
         mWaitScreen.bringToFront()
+        mWaitScreen.show()
     }
 
     private fun hideWaitScreen() = mWaitScreen.hide()
@@ -275,6 +278,8 @@ internal class ActivityUser : AppCompatActivity() {
         mChatSubmitButton.setOnClickListener {
             chatEntrySubmitAction()
         }
+
+        mWaitScreen.setOnClickListener {  }
     }
 
     private fun initView() {
