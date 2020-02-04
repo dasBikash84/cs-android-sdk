@@ -12,6 +12,28 @@
     <string name="chat_session_terminated_message">Chat session terminated!!</string>
     <string name="chat_entry_post_failure_message">Chat entry posting failed</string>
     <string name="cm_name_text">Customer Manager: %1$s</string>
+    <string name="cm_session_online_prompt">Go on-line</string>
+    <string name="cm_session_online_status">You are on-line</string>
+    <string name="cm_session_off_line_prompt">Go off-line</string>
+    <string name="cm_session_off_line_status">You are off-line</string>
+    <string name="standby_message">Please standby for user chat request…</string>
+    <string name="user_name_text">User: %1$s</string>
+    <string name="session_set_up_failure_message">Session set-up failure</string>
+    <string name="chat_session_set_up_failure_message">Chat session set-up failed.</string>
+    <string name="session_termination_message">Session termination failure</string>
+    <string name="quit_chat_session_prompt">Quit chat?</string>
+    <string name="session_start_message">Session started.</string>
+    <string name="session_terminated_message">Session terminated</string>
+    <string name="chat_session_set_up_success_message">New chat session created.</string>
+    <string name="chat_session_termination_message">Chat session terminated</string>
+    <string name="new_chat_request_prompt">New chat request…</string>
+    <string name="accept_chat_request_text">Accept</string>
+    <string name="decline_chat_request_text">Decline</string>
+    <string name="decline_chat_request_prompt">Decline chat request?</string>
+    <string name="accept_chat_request_prompt">Accept chat request?</string>
+    <string name="cm_welcome_message">Hello, Sir. How may i help you?</string>
+    <string name="cm_session_start_failure_message">Cm Session start failure.</string>
+    <string name="cm_session_start_message">Cm Session started.</string>
 
     <string-array name="user_type">
         <item>Customer Manager</item>

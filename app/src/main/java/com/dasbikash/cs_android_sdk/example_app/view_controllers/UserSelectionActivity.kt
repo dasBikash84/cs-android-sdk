@@ -43,7 +43,7 @@ internal class UserSelectionActivity : AppCompatActivity() {
 
     private fun loadCmActivity() {
         finish()
-//        jumpToSelectedActivity(ActivityCm::class.java)
+        jumpToSelectedActivity(ActivityCm::class.java)
     }
 }
 
